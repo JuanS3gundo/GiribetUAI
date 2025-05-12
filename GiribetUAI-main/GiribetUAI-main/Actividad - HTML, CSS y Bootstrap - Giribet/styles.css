@@ -1,0 +1,310 @@
+body {
+    padding-top: 0;
+    --body-bg: #f8f9fa;
+    --text-color: #333;
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+:root {
+    --bs-primary: #007bff;
+    --bs-secondary: #6c757d;
+    --bs-success: #28a745;
+    --bs-info: #17a2b8;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --text-secondary: #6c757d;
+    --navbar-bg: #f8f9fa;
+    --navbar-text: #333;
+    --card-bg: #fff;
+    --card-text: #333;
+    --btn-outline-secondary-color: #6c757d;
+    --btn-outline-secondary-border-color: #6c757d;
+    --btn-outline-secondary-hover-bg: #6c757d;
+    --btn-outline-secondary-hover-color: #fff;
+}
+
+.bg-purple {
+    background-color: #42a8c1 !important;
+    color: white !important;
+}
+
+.text-purple {
+    color: #4299c1 !important;
+}
+
+.bg-light {
+    background-color: var(--bs-light) !important;
+    color: var(--text-color) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand {
+    color: var(--navbar-text);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+.navbar-toggler-icon {
+    background-color: var(--navbar-text);
+}
+
+#inicio {
+    min-height: auto;
+    padding: 80px 0;
+    display: block;
+    background-color: var(--body-bg);
+    text-align: center;
+}
+
+#inicio .container {
+    text-align: center;
+}
+
+#inicio h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#inicio h2 {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    background-color: #00aaff;
+}
+
+#testimonios .card {
+    border-color: #eee;
+}
+
+#testimonios .carousel-control-prev-icon,
+#testimonios .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+#testimonios .carousel-indicators button {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#testimonios .carousel-indicators .active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#contacto .form-control {
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+#contacto .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#contacto .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ddd;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 56px;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    #inicio {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    #inicio .container {
+        text-align: left;
+    }
+
+    #inicio h1 {
+        font-size: 2.5rem;
+    }
+
+    #inicio h2 {
+        font-size: 1.5rem;
+    }
+}
+
+body.dark-mode {
+    --body-bg: #1e293b;
+    --text-color: #f0f4f8;
+    --navbar-bg: #2d3748;
+    --navbar-text: #f0f4f8;
+    --card-bg: #374151;
+    --card-text: #f0f4f8;
+    --bg-light: #374151 !important;
+    --text-secondary: #cbd5e1;
+    --btn-outline-secondary-color: #cbd5e1;
+    --btn-outline-secondary-border-color: #cbd5e1;
+    --btn-outline-secondary-hover-bg: #cbd5e1;
+    --btn-outline-secondary-hover-color: #1a202c;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h5 {
+    color: var(--text-color);
+}
+
+body.dark-mode .navbar {
+    background-color: var(--navbar-bg);
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar-nav .nav-link,
+body.dark-mode .navbar-toggler-icon {
+    color: var(--navbar-text);
+    background-color: transparent;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: #e0f7fa;
+}
+
+body.dark-mode #inicio,
+body.dark-mode #habilidades,
+body.dark-mode #proyectos,
+body.dark-mode #testimonios,
+body.dark-mode #contacto {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+body.dark-mode .card {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border-color: #4a5568;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .bg-light {
+    background-color: var(--bg-light) !important;
+    color: var(--text-color) !important;
+}
+
+body.dark-mode .text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+body.dark-mode .btn-outline-secondary {
+    color: var(--btn-outline-secondary-color);
+    border-color: var(--btn-outline-secondary-border-color);
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background-color: var(--btn-outline-secondary-hover-bg);
+    color: var(--btn-outline-secondary-hover-color);
+    border-color: var(--btn-outline-secondary-hover-bg);
+}
+
+body.dark-mode footer {
+    background-color: #283141;
+    color: #f0f4f8;
+}
+
+body.dark-mode footer a {
+    color: #cbd5e1;
+}
+
+body.dark-mode footer a:hover {
+    color: #e0f7fa;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

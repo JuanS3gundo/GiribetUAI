@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#contenedor {
+    width: 700px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+#cabecera {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+#menu {
+    float: right; 
+    width: 150px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+#contenido {
+    float:none; 
+    width: 550px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+#pie {
+    clear: both; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #333;
+}
